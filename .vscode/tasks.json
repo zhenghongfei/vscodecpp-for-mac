@@ -1,0 +1,28 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "vscode for c++",
+			"command": "/usr/bin/clang++",
+			"args": [
+				"-std=c++11",
+				"-g",
+				"${workspaceFolder}/*.cpp",
+				"-o",
+				"${workspaceFolder}/cpp.out"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "编译器: /usr/bin/clang++"
+		}
+	]
+}
